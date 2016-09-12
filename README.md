@@ -19,7 +19,7 @@ Generic installation instructions are [here](https://gohugo.io/themes/installing
 
 ### Site configuration
 
-Change the bits of the following toml file that start with TK (and get rid of the TK)
+Change the bits of the following config.toml file that start with TK (and get rid of the TK)
 
 ---
 ```toml
@@ -39,13 +39,22 @@ title = "TK MY SITE'S TITLE"
 ```
 ---
 
+### Indexintro.md
+
+To add in some introductory spiel to the index page, create a markdown document in your content folder with the following in your toml frontmatter:
+```toml
+timeless = "indexintro"
+title = "indexintro"
+```
+To keep things simple there's no repositioning of the page index; so perhaps keep this bit short so as not to push the index too far down the page.
+
 ### CSS
 
 The CSS is adapted from [HTML5 Boilerplate](https://html5boilerplate.com/).  The theme mainly makes use of flexbox for positioning, with some color tweaks.  In terms of font choice: geometric sans-serifs, monospace, and perhaps even slab serifs all seem to work fine.
 
 ### Individual page configuration
 
-Page configuration is largely unchanged from the default but there are some additional bits in the archetype (the template that defines default page settings) which enable additional features.  It's explained in the comments in the toml file below.
+Page configuration is largely unchanged from the default but there are some additional bits in the archetype (the template that defines default page settings) which enable additional features.  It's explained in the comments in the template for your page frontmatter below.
 
 ---
 ```toml
