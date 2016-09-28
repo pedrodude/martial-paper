@@ -21,7 +21,11 @@
 				<section id="post_index">
 					<span class="martialpaper_title2">Pages:</span>
 					<ul id="page_list">
-					{{ range (where .Data.Pages ".Params.timeless" "=" "true") }}{{ .Render "postsummary" }}{{ end }}
+					{{ range (where .Data.Pages ".Params.timeless" "=" "true") }}
+						{{ if eq .Params.suppress "false"}}
+							{{ .Render "postsummary" }}
+						{{ end }}
+					{{ end }}
 					</ul>
 				</section>
 				{{end}}
@@ -29,7 +33,11 @@
 				<section id="blog_index">
 					<span class="martialpaper_title2">Posts:</span>
 					<ul id="post_list">
-						{{ range (where .Data.Pages ".Params.timeless" "=" "false") }}{{ .Render "postsummary" }}{{ end }}
+						{{ range (where .Data.Pages ".Params.timeless" "=" "false") }}
+							{{ if eq .Params.suppress "false"}}
+								{{ .Render "postsummary" }}
+							{{ end }}
+						{{ end }}
 					</ul>
 				</section>
 				{{end}}
