@@ -1,6 +1,6 @@
 #Adjust all settings that start with TK to customise this theme to your site.  Also remove the TK
 theme = "martial-paper"
-baseurl = "http://examplesite.com"
+baseurl = "https://www.example.com"
 languageCode = "en-us"
 title = "MARTIALPAPER"
 
