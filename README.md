@@ -5,7 +5,7 @@ A minimalist, smart, paper theme.
 
 The theme was inspired by the right-angle and the default colours by Starry Night Over the Rhone.
 
-A live site using this theme: [socratic.space](http://socratic.space)
+~~A live site using this theme: [socratic.space](http://socratic.space)~~  Nope, it's totally gone.  All that you have to go on is a single screenshot and a sense of adventure.  Plunge forth, valiant one!
 
 ## Screenshot
 
